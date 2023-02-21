@@ -1,142 +1,66 @@
 
 
-## About The Project
+## Fashion-MNIST
 <br>
 <p align='center'>
-<img src="https://github.com/Jauharmuhammed/README-Template/blob/main/assets/Mockup-website.png" width='70%' >
+<img src="https://raw.githubusercontent.com/zalandoresearch/fashion-mnist/master/doc/img/fashion-mnist-sprite.png" width='70%' >
 </p>
 <br>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet cursus ex. Maecenas id lacus ut diam placerat lobortis ac quis nisl. Nulla mattis, sapien quis ultricies bibendum, quam erat gravida velit, eget auctor metus est et leo. Nam tristique vulputate ante at malesuada. Nulla egestas semper ante, et imperdiet elit posuere ut. Integer id nibh eu massa scelerisque aliquet vel vel lacus. Duis luctus dictum odio id dapibus. Suspendisse eu erat odio.. You can find the deployed project [here.](https://github.com/jauharmuhammed/README-Template)
+Fashion-MNIST is a dataset of Zalando's article images—consisting of a training set of 60,000 examples and a test set of 10,000 examples. Each example is a 28x28 grayscale image, associated with a label from 10 classes. We intend Fashion-MNIST to serve as a direct drop-in replacement for the original MNIST dataset for benchmarking machine learning algorithms. It shares the same image size and structure of training and testing splits. [here.](https://github.com/jauharmuhammed/README-Template)
 
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-- In sit amet cursus ex.
-- Maecenas id lacus ut diam placerat lobortis ac quis nisl.
--  Nam tristique vulputate ante at malesuada.
-- imperdiet elit posuere ut.
+## Why we made Fashion-MNIST
 
+The Fashion-MNIST dataset consists of 70,000 grayscale images of size 28x28 pixels, divided into 60,000 training images and 10,000 test images. The images are labeled with integers from 0 to 9, corresponding to 10 different categories of clothing items and accessories. The categories are as follows:
+
+
+- T-shirt/top
+-Trouser
+-Pullover
+-Dress
+-Coat
+-Sandal
+-Shirt
+-Sneaker
+-Bag
+-Ankle boot
 <br>
 
 ### Built With
 
 ![Python](https://img.shields.io/badge/Python%20-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5%20-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS%20-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
-![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
   
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
-![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
-
-![Github Pages](https://img.shields.io/badge/GitHub%20Pages-%23327FC7.svg?style=for-the-badge&logo=github&logoColor=white)
-![AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Nelify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)
+
 
 <br>
 
-## Running this project
+## Step 1: Installation and Setup
 
-This is a sample for Django Project.
-To get this project up and running you should start by having Python installed on your computer. It's advised you create a virtual environment to store your projects dependencies separately. You can install virtualenv with
+Artificial neural networks (ANNs).
+Artificial neural networks (ANNs) are commonly used for image classification tasks. The basic idea behind ANNs for image classification is to train a model to recognize patterns in images and assign labels to them based on those patterns.
 
-```
-pip install virtualenv
-```
-
-Clone or download this repository and open it in your editor of choice. In a terminal (mac/linux) or windows terminal, run the following command in the base directory of this project
+The most commonly used ANN architecture for image classification is the convolutional neural network (CNN). CNNs consist of several layers, including convolutional layers, pooling layers, and fully connected layers.
 
 ```
-virtualenv venv
+!pip install tensorflow==2.3.2
+import tensorflow as tf
 ```
 
-That will create a new folder `env` in your project directory. Next activate it with this command on mac/linux:
+ assume you are asking for a list of libraries commonly used in machine learning and data science. Here are some of the most popular ones:
+
+
 
 ```
-source venv/bin/active
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
 ```
 
-Then install the project dependencies with
 
-```
-pip install -r requirements.txt
-```
-
-Apply migrations and create your database
-```
-python manage.py migrate
-```
-Create a user with manage.py
-```
-python manage.py createsuperuser
-```
-
-Now you can run the project with this command
-
-```
-python manage.py runserver
-```
-
-<br>
-
-## Screenshots
-
-
-
-<table width="100%"> 
-<tr>
-
-<td width="50%">
-<p align="center">
-Light Mode
-</p>
-<img src="https://github.com/Jauharmuhammed/README-Template/blob/main/assets/light%20Mode.png">  
-</td>
-  <td width="50%">      
-<p align="center">
-Dark Mode
-</p>
-<img src="https://github.com/Jauharmuhammed/README-Template/blob/main/assets/dark-mode.png">
-</td> 
-</table>
-<br/>
-
-## Contact
-
-<div align='left'>
-
-<a href="https://linkedin.com/in/jauharmuhammed" target="_blank">
-<img src="https://img.shields.io/badge/linkedin-%2300acee.svg?color=405DE6&style=for-the-badge&logo=linkedin&logoColor=white" alt=linkedin style="margin-bottom: 5px;"/>
-</a>
-	
-<a href="https://twitter.com/jauharmuhammed_" target="_blank">
-<img src="https://img.shields.io/badge/twitter-%2300acee.svg?color=1DA1F2&style=for-the-badge&logo=twitter&logoColor=white" alt=twitter style="margin-bottom: 5px;"/>
-</a>
-	
-<a href="mailto:jauharmuhammedk@gmail.com" target="_blank">
-<img src="https://img.shields.io/badge/gmail-%23EA4335.svg?style=for-the-badge&logo=gmail&logoColor=white" t=mail style="margin-bottom: 5px;" />
-</a>
-	
-		
-<a href="https://codepen.io/jauharmuhammed" target="_blank">
-<img src="https://img.shields.io/badge/codepen-%23000000.svg?style=for-the-badge&logo=codepen&logoColor=white" t=mail style="margin-bottom: 5px;" />
-</a>
 
 </div>
